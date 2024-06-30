@@ -13,6 +13,7 @@ header {
 }
 
 h1 {
+  text-align: center;
   font-size: 36px;
   color: #4e0b2b;
   font-weight: 500;
@@ -23,6 +24,10 @@ p {
   font-size: 16px;
   line-height: 1.5;
   text-align: justify;
+}
+
+strong {
+  color: #4e0b2b;
 }
 
 .sentence {
@@ -41,7 +46,7 @@ form {
   box-shadow: rgba(88, 88, 88, 0.2) 0px 2px 8px 0px;
 }
 
-.text-input {
+.generate-ingredients {
   padding: 15px 20px;
   font-size: 16px;
   border-radius: 20px;
@@ -55,7 +60,7 @@ form {
   margin-left: 10px;
   border-radius: 20px;
   border: none;
-  font-size: 16px;
+  font-size: 15px;
   padding: 14px 24px;
   color: white;
   background: #e85666;
@@ -91,5 +96,5 @@ footer {
 
 img {
   margin: 10px;
-  transform: translate(65px, -45px);
+  transform: translate(30px, -95px);
 }

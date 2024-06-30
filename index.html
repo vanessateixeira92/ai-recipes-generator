@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>AI Recipes Generator</title>
   </head>
   <body>
@@ -36,12 +37,12 @@
         <form id="generate-recipes">
           <input
             type="text"
-            placeholder="Enter your ingredients.."
+            placeholder="What do you have in your fridge?"
             required
             autofocus
             autocomplete="off"
-            class="text-input"
-            id="text-input"
+            class="generate-ingredients"
+            id="generate-ingredients"
           />
           <input
             type="submit"
