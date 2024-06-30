@@ -21,10 +21,6 @@ function generateRecipes(event) {
   recipeElement.classList.remove("hidden");
   recipeElement.innerHTML = `<div class="blink">🥣 Generating a recipe with ${instructionsElement.value} </div>`;
 
-  console.log("Generating recipes..");
-  console.log(`Context: ${context}`);
-  console.log(`Prompt: ${prompt}`);
-
   axios(apiURL).then(displayRecipes);
 }
 
