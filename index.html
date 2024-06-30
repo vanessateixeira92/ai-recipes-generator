@@ -5,6 +5,12 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>AI Recipes Generator</title>
   </head>
   <body>
@@ -14,9 +20,10 @@
         <p>
           "<strong>The world wastes more than a billion meals a day</strong> -
           According to the United Nations Environment Programme, food loss and
-          waste generates 8% to 10% of annual global greenhouse gas emissions -
-          almost five times more than the aviation sector.
-          <br />
+          waste generates <strong>8% to 10%</strong> of annual global greenhouse
+          gas emissions - almost five times more than the aviation sector.
+        </p>
+        <p class="sentence">
           <strong>
             “Zero waste” is a practical way of cooking with ingredients left
             over from a meal. Enjoy everything and don't waste
@@ -32,24 +39,26 @@
             required
             autofocus
             autocomplete="off"
+            class="text-input"
           />
-          <input type="submit" />
+          <input type="submit" class="generate-button" />
         </form>
-        <div>The recipe will go here</div>
+        <div class="recipes">The recipe will go here</div>
       </main>
+
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/vanessateixeira92"> Vanessa Teixeira </a>
+        and is
+        <a href="https://github.com/vanessateixeira92/ai-recipes-generator">
+          open-sourced on GitHub
+        </a>
+        and is
+        <a href="https://ai-recipes-generator-shecodes.netlify.app/">
+          hosted on Netlify
+        </a>
+      </footer>
     </div>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/vanessateixeira92"> Vanessa Teixeira </a> and
-      is
-      <a href="https://github.com/vanessateixeira92/ai-recipes-generator">
-        open-sourced on GitHub
-      </a>
-      and is
-      <a href="https://ai-recipes-generator-shecodes.netlify.app/">
-        hosted on Netlify
-      </a>
-    </footer>
     <img src="img/img.png" alt="women cooking" />
     <script src="src/index.js"></script>
   </body>
