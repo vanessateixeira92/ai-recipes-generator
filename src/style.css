@@ -38,16 +38,19 @@ strong {
 }
 
 form {
+  display: flex;
+}
+
+.form-container {
   background: white;
   margin-top: 30px;
   padding: 30px;
   border-radius: 10px;
-  display: flex;
   box-shadow: rgba(88, 88, 88, 0.2) 0px 2px 8px 0px;
 }
-
 .generate-ingredients {
   padding: 15px 20px;
+  margin-bottom: 10px;
   font-size: 16px;
   border-radius: 20px;
   border: 1px solid #e85666;
@@ -57,11 +60,11 @@ form {
 }
 
 .generate-button {
-  margin-left: 10px;
+  margin: 0 0 10px 10px;
   border-radius: 20px;
   border: none;
   font-size: 15px;
-  padding: 14px 24px;
+  padding: 14px 20px;
   color: white;
   background: #e85666;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -69,6 +72,16 @@ form {
 
 .generate-button:hover {
   cursor: pointer;
+}
+
+.hint {
+  opacity: 0.6;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none;
 }
 
 .recipes {
@@ -91,10 +104,25 @@ a {
 footer {
   text-align: center;
   font-size: 13px;
+  margin-top: 15px;
   opacity: 0.8;
 }
 
 img {
   margin: 10px;
   transform: translate(30px, -95px);
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

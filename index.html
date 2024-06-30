@@ -34,26 +34,28 @@
         </p>
       </header>
       <main>
-        <form id="generate-recipes">
-          <input
-            type="text"
-            placeholder="What do you have in your fridge?"
-            required
-            autofocus
-            autocomplete="off"
-            class="generate-ingredients"
-            id="generate-ingredients"
-          />
-          <input
-            type="submit"
-            value="Generate Recipes"
-            class="generate-button"
-            id="generate-button"
-          />
-        </form>
-        <div class="recipes" id="recipes"></div>
+        <div class="form-container">
+          <form id="generate-recipes">
+            <input
+              type="text"
+              placeholder="What do you have in your fridge?"
+              required
+              autofocus
+              autocomplete="off"
+              class="generate-ingredients"
+              id="generate-ingredients"
+            />
+            <input
+              type="submit"
+              value="Generate Recipes"
+              class="generate-button"
+              id="generate-button"
+            />
+          </form>
+          <small class="hint">i.e.: eggs, cheese, ham and tomato</small>
+        </div>
+        <div class="recipes hidden" id="recipes"></div>
       </main>
-
       <footer>
         This AI project was coded by
         <a href="https://github.com/vanessateixeira92"> Vanessa Teixeira </a>
