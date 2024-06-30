@@ -2,10 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Recipes Generatorfooter</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>AI Recipes Generator</title>
   </head>
   <body>
+    <div class="container">
+      <header>
+        <h1>AI Recipes Generator</h1>
+        <p>
+          "<strong>The world wastes more than a billion meals a day</strong> -
+          According to the United Nations Environment Programme, food loss and
+          waste generates 8% to 10% of annual global greenhouse gas emissions -
+          almost five times more than the aviation sector.
+          <br />
+          <strong>
+            “Zero waste” is a practical way of cooking with ingredients left
+            over from a meal. Enjoy everything and don't waste
+            anything!"</strong
+          >
+        </p>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter your ingredients.."
+            required
+            autofocus
+            autocomplete="off"
+          />
+          <input type="submit" />
+        </form>
+        <div>The recipe will go here</div>
+      </main>
+    </div>
     <footer>
       This AI project was coded by
       <a href="https://github.com/vanessateixeira92"> Vanessa Teixeira </a> and
@@ -18,5 +50,6 @@
         hosted on Netlify
       </a>
     </footer>
+    <script src="src/index.js"></script>
   </body>
 </html>
